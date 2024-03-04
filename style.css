@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+footer p, footer small {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    color: rgb(152, 33, 203);
+}
+
+#about p {
+    padding-top: 25px;
+    font-weight: normal;
+}
+
+header {
+    padding: 16px 0;
+    background-color: blueviolet;
+    color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.hr1 {
+    border: 1px solid rgb(152, 33, 203);
+}
+
+.container, .minha-grid {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .minha-grid {
+    align-items: flex-start;
+}
+
+section h2 {
+    padding-top: 25px;
+}
+
+.store-foto {
+    margin-top: 30px;
+    height: 600px;
+    width: 800px;
+    margin-right: 32px;
+}
+
+.minha-grid img {
+    height: 300px;
+    width: 300px;
+}
+
+
+.container-flex {
+    display: flex;
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.lista-tenis h3 {
+    margin: 16px 0;
+}
+
+button {
+    display: block;
+    width: 70%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(123, 70, 173);
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(152, 33, 203);
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+footer small {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:640px) {
+
+    .container {
+        max-width: 90%;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about {
+        display: block;
+        font-size: 1em;
+        margin-top: 48px;
+    }
+
+    #about {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .minha-grid ul {
+        display: block;
+    }
+
+    .container-flex li h3 {
+        font-size: 32px;
+    }
+
+    footer {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .store-foto {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container {
+        max-width: 90%;
+    }
+
+
+    #about {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about {
+        display: block;
+    }
+
+    .store-foto {
+        max-width: 100%;
+    }
+
+    .minha-grid, .container-flex {
+        grid-template-columns: repeat 2, 10%;
+    }
+
+    #about {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .container-flex li h3 {
+        font-size: 32px;
+    }
+}
