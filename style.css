@@ -1,211 +1,262 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Kdam Thmor Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kdam Thmor Pro", sans-serif;
 }
 
 p {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-footer p, footer small {
-    font-family: "Roboto", sans-serif;
-    font-weight: normal;
+footer p,
+footer small {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
 }
 
 h2 {
-    color: rgb(152, 33, 203);
+  color: rgb(152, 33, 203);
 }
 
 #about p {
-    padding-top: 25px;
-    font-weight: normal;
+  padding-top: 25px;
+  font-weight: normal;
 }
 
 header {
-    padding: 16px 0;
-    background-color: blueviolet;
-    color: white;
+  padding: 16px 0;
+  background-color: blueviolet;
+  color: white;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header nav li {
-    display: inline;
-    margin-left: 16px;
-    font-size: 16px;
+  display: inline;
+  margin-left: 16px;
+  font-size: 16px;
 }
 
 header nav li a {
-    text-decoration: none;
-    color: #ccc;
+  text-decoration: none;
+  color: #ccc;
 }
 
 .hr1 {
-    border: 1px solid rgb(152, 33, 203);
+  border: 1px solid rgb(152, 33, 203);
 }
 
-.container, .minha-grid {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-header .container,
-section .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-section .minha-grid {
-    align-items: flex-start;
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 section h2 {
-    padding-top: 25px;
+  padding-top: 25px;
+}
+
+section .grid-sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .store-foto {
-    margin-top: 30px;
-    height: 600px;
-    width: 800px;
-    margin-right: 32px;
+  margin-top: 30px;
+  height: 600px;
+  width: 800px;
+  border-radius: 10px;
+  margin-left: 150px;
 }
 
-.minha-grid img {
-    height: 300px;
-    width: 300px;
+.container img {
+  height: 300px;
+  width: 300px;
 }
 
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 16px;
+}
 
-.container-flex {
-    display: flex;
-    margin-top: 50px;
+.title {
+  margin-bottom: 10px;
+}
+.marginb {
+  margin-bottom: 5px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-.lista-tenis h3 {
-    margin: 16px 0;
+.lista-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.lista-item {
+  padding: 10px 20px;
 }
 
 button {
-    display: block;
-    width: 70%;
-    padding: 8px 0;
-    border: none;
-    background-color: rgb(123, 70, 173);
-    border-radius: 6px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
-    cursor: pointer;
-    margin-top: 10px;
+  width: 70%;
+  padding: 8px 0;
+  border: none;
+  background-color: rgb(123, 70, 173);
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 button:hover {
-    background-color: rgb(152, 33, 203);
+  background-color: rgb(152, 33, 203);
 }
 
 footer {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+  background-color: blueviolet;
+  color: white;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
 }
 
 footer small {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  header .container {
+    width: 90%;
+  }
+
+  .store-foto {
+    margin: 50px auto;
+  }
+
+  .sobre h2 {
+    font-size: 24px;
+  }
+
+  .sobre p {
+    font-size: 9px;
+  }
+
+  section .grid-sobre {
+    width: 70%;
+    gap: 32px;
+    margin: 0 auto;
+  }
+
+  .produts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .lista-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .price {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+
+  button {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+  }
 }
 
-@media only screen and (max-width:640px) {
+@media only screen and (max-width: 400px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .container {
-        max-width: 90%;
-    }
-    
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  header h1 {
+    font-size: 24px;
+  }
 
-    #about {
-        display: block;
-        font-size: 1em;
-        margin-top: 48px;
-    }
-
-    #about {
-        max-width: 100%;
-        margin-right: 0;
-        margin-bottom: 2%;
-    }
-
-    .minha-grid ul {
-        display: block;
-    }
-
-    .container-flex li h3 {
-        font-size: 32px;
-    }
-
-    footer {
-        font-size: 13px;
-        margin-bottom: 10px;
-    }
-
-    .store-foto {
-        max-width: 90%;
-    }
+  header a {
+    font-size: 16px;
+  }
 }
 
-@media only screen and (min-width: 641px) and (max-width: 1023px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .container {
-        max-width: 90%;
-    }
+@media only screen and (max-width: 640px) {
+  header .container {
+    width: 90%;
+  }
 
+  section .grid-sobre {
+    grid-template-columns: 1fr;
+  }
 
-    #about {
-        align-items: center;
-        justify-content: center;
-    }
+  .store-foto {
+    margin: 50px auto;
+  }
 
-    #about {
-        display: block;
-    }
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-    .store-foto {
-        max-width: 100%;
-    }
+  .produts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-    .minha-grid, .container-flex {
-        grid-template-columns: repeat 2, 10%;
-    }
+  .lista-grid {
+    grid-template-columns: 1fr;
+  }
 
-    #about {
-        max-width: 100%;
-        margin-right: 0;
-        margin-bottom: 2%;
-    }
-
-    .container-flex li h3 {
-        font-size: 32px;
-    }
+  button {
+    width: 60%;
+  }
 }
